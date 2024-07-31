@@ -8,36 +8,46 @@
         body {
             background-color: black;
             color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 50px; /* Height of the footer */
         }
-        .content {
+        .container {
             max-width: 800px;
+            padding: 20px;
             margin: 20px;
+            text-align: left;
         }
         .footer {
-            position: absolute;
-            bottom: 20px;
             width: 100%;
             text-align: center;
             background-color: #e0e0e0;
             padding: 10px 0;
+            position: absolute;
+            bottom: 0;
         }
         .footer a {
             color: black;
             margin: 0 10px;
             text-decoration: none;
         }
+        h1, h2, p {
+            margin: 10px 0;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
+        }
     </style>
 </head>
 <body>
-    <div class="content">
+    <div class="container">
         <h1>Privacy Policy</h1>
         <p><strong>Last Updated:</strong> 7/30/2024</p>
         
@@ -81,13 +91,17 @@
 
         <h2>7. Contact Us</h2>
         <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-        <p>Email: contact@looxmaxapp.com</p>
-        <p>Address: OWEN MEDIA, LLC<br>30 N Gould St, Ste N<br>Sheridan, WY 82801</p>
+        <p>
+            OWEN MEDIA, LLC<br>
+            30 N Gould St, Ste N<br>
+            Sheridan, WY 82801<br>
+            Email: contact@looxmaxapp.com
+        </p>
     </div>
     <div class="footer">
-        <a href="/home">Home</a> - <a href="/contact">Contact</a> - <a href="/privacy">Privacy</a>
+        <a href="index.html">Home</a> - 
+        <a href="mailto:contact@looxmaxapp.com">Contact</a> - 
+        <a href="privacy.html">Privacy</a>
     </div>
 </body>
 </html>
-
-
